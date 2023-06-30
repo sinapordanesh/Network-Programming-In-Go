@@ -1,4 +1,4 @@
-package mian
+package main
 
 import (
 	"flag"
@@ -8,12 +8,13 @@ import (
 	"log"
 
 	"golang.org/x/crypto/ssh"
-	//"github.com/pkg/errors"
+	"github.com/pkg/errors"
 )
 
 func main() {
-	target := flag.String("target", "localhost", "Target to connect to run a command")
+	target := flag.String("target", "127.0.0.1", "Target to connect to run a command")
 	cmd := flag.String("cmd", "", "Command to run against the target device")
+	flag.Parse()
 	output, err := run(*target, *cmd)
 	if err != nil {
 		log.Fatal(err)
@@ -33,7 +34,7 @@ func run(target, cmd string) (string, error) {
 	}
 	client, err := ssh.Dial("tcp", fmt.Sprintf("%v:22",target), cfg)
 	if err != nil {
-		return "", err
+		return "", errors.Wrap(err, "dial failed")
 	
 	}
 	defer client.Close()
