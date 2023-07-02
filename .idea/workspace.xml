@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414d4d27-5a14-4dc9-a03d-6175804ff40a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_options/pkg/devcon/devcon.go" beforeDir="false" afterPath="$PROJECT_DIR$/client_options/pkg/devcon/devcon.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
