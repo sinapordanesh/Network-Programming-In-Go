@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="414d4d27-5a14-4dc9-a03d-6175804ff40a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/interactive_sessions/cmd/exp/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interactive_sessions/cmd/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interactive_sessions/pkg/devcon/devcon.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_options/cmd/exp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_options/cmd/server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_options/pkg/devcon/devcon.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a_client_package/cmd/exp/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/a_client_package/cmd/exp/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a_client_package/pkg/devcon/devcon.go" beforeDir="false" afterPath="$PROJECT_DIR$/a_client_package/pkg/devcon/devcon.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic_client/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic_client/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minimal_server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/minimal_server/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/sina/Library/CloudStorage/OneDrive-UniversityofCalgary/Programming Mac/CyberSec/Network-Programming-In-Go/interactive_sessions",
+    "last_opened_file_path": "/Users/sina/Library/CloudStorage/OneDrive-UniversityofCalgary/Programming Mac/CyberSec/Network-Programming-In-Go/client_options",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.editor"
@@ -47,6 +43,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client_options" />
       <recent name="$PROJECT_DIR$/interactive_sessions" />
     </key>
   </component>
