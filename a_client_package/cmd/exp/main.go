@@ -3,7 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/codered-by-ec-council/Hands-on-Network-Programming-with-Go/pkg/devcon"
+	//"github.com/codered-by-ec-council/Hands-on-Network-Programming-with-Go/pkg/devcon"
+	"a_clien_pkg/pkg/devcon"
 	"log"
 )
 
@@ -12,8 +13,8 @@ func main() {
 	cmd := flag.String("cmd", "", "command to run against target device")
 	flag.Parse()
 
-	client, _ := devcon.NewClient("go", *target)
-	output, err := client.Run(*cmd)
+	client := devcon.NewClient(*target)
+	output, err := client.Run(*target, *cmd)
 	if err != nil {
 		log.Fatal(err)
 	}
