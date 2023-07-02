@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -15,7 +16,14 @@ func main() {
 	cmdFile := flag.String("cmdfile", "", "command filename")
 	flag.Parse()
 
-	client := devcon.NewClient(*target, devcon.SetPassword(os.Getenv("SSH_PASSWORD")))
+	// set hostKey
+	knownhosts := filepath.Join(os.Getenv("HOME"), ".ssh", "known_hosts")
+	client := devcon.NewClient(
+		os.Getenv("SSH_USER"),
+		*target,
+		devcon.SetPassword(os.Getenv("SSH_PASSWORD")),
+		devcon.SetHostKeyCallback(knownhosts),
+	)
 
 	f, err := os.Open(*cmdFile)
 	if err != nil {
@@ -32,6 +40,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	fmt.Println(output)
 }
